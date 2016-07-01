@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_barrage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="1dp">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_item_header"-->
+    <!--android:layout_width="36dp"-->
+    <!--android:layout_height="36dp"-->
+    <!--android:src="@mipmap/sophie" />-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_gift_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/live_gift_bg"
+            android:paddingLeft="35dp"
+            android:paddingRight="60dp">
+
+            <!--<com.github.siyamed.shapeimageview.mask.PorterShapeImageView-->
+            <!--android:id="@+id/civ_item_barrage_avatar"-->
+            <!--android:layout_width="@dimen/img_small_size"-->
+            <!--android:layout_height="@dimen/img_small_size"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_margin="1dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:src="@mipmap/avatar"-->
+            <!--app:siShape="@drawable/shape_round_circle"-->
+            <!--app:siSquare="false" />-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_barrage_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:ellipsize="middle"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_barrage_username"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_barrage_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="x"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_barrage_nums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_barrage_username"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/civ_item_barrage_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:id="@+id/rl_gift_picture"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_gift_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tvMount"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_gravity="right"
+            android:text="dsfds"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
